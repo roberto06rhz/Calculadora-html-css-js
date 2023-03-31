@@ -89,20 +89,70 @@
   }
  
    
-  .gray {
-    background-color: #eaeaea;
-    color: #2f2d38;
-  }
   
-  .purple {
-    background-color: #7d5dfe;
-    color: #f2f2f2;
-  }
   
   .buttonL {
     color: #7d5dfe;
   }
+  /*
+   function calculateResult() {
+    let result = document.getElementById("result").value;
+    let expression = result.replace(/isEven/g, '%2==0').replace(/isOdd/g, '%2!=0').replace(/isPrime/g, 'isPrime($&)').replace(/(\d+)!/g, 'factorial($1)').replace(/(\d+)sqrt/g, 'Math_sqrt($1)').replace(/\^/g, '**');
+    
+    console.log(expression);
+    // /sqrt\(([^)]+)\)/g
+    
+    try {
+      let evalResult = eval(expression);
+      console.log(evalResult);
+      
+      if (evalResult === Infinity || isNaN(evalResult)) {
+        document.getElementById("result").value = "Erro";
+      } else {
+        document.getElementById("result").value = evalResult;
+        
+        resultPar.innerHTML = Number(evalResult) % 2 == 0 ? 'true' : 'false'
+
+        resultImpar.innerHTML = Number(evalResult) % 2 != 0 ? 'true' : 'false'
+
+        
+        
+      }
+    } catch {
+      document.getElementById("result").value = "Erro";
+    }
+
+    console.log(Number(result.value));
+    
+  }
+ 
   
+  function factorial(n) {
+    if (n === 0 || n === 1) {
+      return 1;
+    } else {
+      return n * factorial(n - 1);
+    }
+  }
+ 
+   function isPrime(n) {
+    console.log(n);
+    if (n < 2) {
+      return false;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function Math_sqrt(n){
+    console.log('aqui');Pri
+    return Math.sqrt(n)
+  } */
+
   
   
  
